@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <!-- Material components -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+  <script type="module">
+    import '@material/web/all.js';
+    import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+
+  <!-- Material colors -->
+  <link rel="stylesheet" href="/css/light-hc.css">
+  <link rel="stylesheet" href="/css/light-mc.css">
+  <link rel="stylesheet" href="/css/light.css">
+  <link rel="stylesheet" href="/css/dark-hc.css">
+  <link rel="stylesheet" href="/css/dark-mc.css">
+  <link rel="stylesheet" href="/css/dark.css">
+  <link rel="stylesheet" href="/css/colors.module.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="surface dark">
+  <!-- Project -->
+
+  <nav id="navbar" class="surface-variant">
+    <div id="navbar_content">
+      <div id="menu_icon" class="on-primary-text material-icons">menu</div>
+      <span id="title_bar_text" class="on-surface-text">Android AppStudio</span>
+    </div>
+  </nav>
+
+  <div class="container" id="app_description">
+    <h1 class="on-surface-text">Android <span class="primary-text">AppStudio</span>. Build your dream app using drag & drop.</h1>
+    <p class="on-surface-text" style="font-weight: 300;">No need to code, No experience needed, Beginner friendly</p>
+
+    <div style="display: flex;justify-content:center;">
+      <md-outlined-button style="margin: 0.2em; z-index: -1;">
+        Get Started
+      </md-outlined-button>
+      <md-filled-button style="margin: 0.2em; z-index: -1;">
+        View Docs
+      </md-filled-button>
+    </div>
+  </div>
+
+  <div class="container" id="app_features">
+
+
+    <div class="card surface-variant">
+      <div class="card_content">
+        <img src="/assets/terminal.jpg" alt="" class="card_image" />
+        <div class="card_desc">
+          <center>
+            <h4 class="on-surface-text">Terminal</h4>
+            <p class="on-surface-variant-text">Contains built-in terminal with many collections of package. Available package manager to manage, update, install packages.</p>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="card surface-variant">
+      <div class="card_content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiYyoZuaiIrBKygBUDqYOYy0IurIMFTvxt0A&s" alt="" class="card_image" />
+        <div class="card_desc">
+          <center>
+            <h4 class="on-surface-text">Free to use</h4>
+            <p class="on-surface-variant-text">This project is free to use, no ads and it's source code is available on <a href="https://github.com/Innovative-CST/AndroidAppStudio">GitHub</a>.</p>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="card surface-variant">
+      <div class="card_content">
+        <img src="/assets/logic_editor.jpg" alt="" class="card_image" />
+        <div class="card_desc">
+          <center>
+            <h4 class="on-surface-text">Logic writer</h4>
+            <p class="on-surface-variant-text">Create your app logic by simply drag and drop of blocks. Make your app without coding knowledge.</p>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

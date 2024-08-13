@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <!-- Material components -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+  <script type="module">
+    import '@material/web/all.js';
+    import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+
+  <!-- Material colors -->
+  <link rel="stylesheet" href="/css/light-hc.css">
+  <link rel="stylesheet" href="/css/light-mc.css">
+  <link rel="stylesheet" href="/css/light.css">
+  <link rel="stylesheet" href="/css/dark-hc.css">
+  <link rel="stylesheet" href="/css/dark-mc.css">
+  <link rel="stylesheet" href="/css/dark.css">
+  <link rel="stylesheet" href="/css/colors.module.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="surface dark">
+  <!-- Project -->
+
+  <nav id="navbar" class="surface-variant">
+    <div id="navbar_content">
+      <div id="menu_icon" class="on-primary-text material-icons">menu</div>
+      <span id="title_bar_text" class="on-surface-text">ICST</span>
+    </div>
+  </nav>
+
+  <div class="container" id="description">
+    <h1 class="on-surface-text">Innovative Creations of Software Technology, <span class="primary-text">Softwares</span> for Android.</h1>
+    <p class="on-surface-text" style="font-weight: 300;">No need to code, No experience needed, Beginner friendly</p>
+
+    <div style="display: flex;justify-content:center;">
+      <md-outlined-button style="margin: 0.2em; z-index: -1;">
+        About us
+      </md-outlined-button>
+      <a href="https://github.com/Innovative-CST">
+        <md-filled-button style="margin: 0.2em; z-index: -1;">
+          GitHub
+        </md-filled-button>
+      </a>
+
+    </div>
+  </div>
+
+  <h2 class="on-surface-text" style="padding-left: 1em;">Projects</h2>
+
+  <div class="container" id="app_features">
+
+    <div class="card surface-variant" onclick="window.location.href = '/androidappstudio/index.html'">
+      <div class="card_content">
+        <img src="https://camo.githubusercontent.com/c52eb377b3b8a63d3e752a3f3deddee3c6d87de11f1a8fc09ca332187b6a9523/68747470733a2f2f696d616765732e7765736572762e6e6c2f3f75726c3d68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f496e6e6f7661746976652d6373742f416e64726f696441707053747564696f2f6d61696e2f6170702f7372632f6d61696e2f7265732f6472617761626c652d787878686470692f6c6f676f2e6a70673f763d3426683d32353026773d323530266669743d636f766572266d61736b3d636972636c65266d61786167653d3764" alt="" class="card_image" />
+        <div class="card_desc">
+          <center>
+            <h4 class="on-surface-text">Android AppStudio</h4>
+            <p class="on-surface-variant-text">Create your android app by simply drag and drop of blocks. Make your app without coding knowledge.</p>
+          </center>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card surface-variant">
+      <div class="card_content">
+        <img src="https://camo.githubusercontent.com/024658e817078083c191ecec1d5a5a352c4414cd400108fb5dedd0bfaf20aa5e/68747470733a2f2f696d616765732e7765736572762e6e6c2f3f75726c3d68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f496e6e6f7661746976652d6373742f426c6f636b5765624275696c6465722f6465762f6170702f7372632f6d61696e2f7265732f6472617761626c652f6c6f676f2e706e673f763d3426683d32353026773d323530266669743d636f766572266d61736b3d636972636c65266d61786167653d3764" alt="" class="card_image" />
+        <div class="card_desc">
+          <center>
+            <h4 class="on-surface-text">BlockWeb Builder</h4>
+            <p class="on-surface-variant-text">Creates the website code by using blocks drag drop user-interface.</p>
+          </center>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card surface-variant">
+      <div class="card_content">
+        <img src="https://camo.githubusercontent.com/8a222500cc48651e3f50b6294bea9d302af894e64eaca1cc614515c8cbf2c2ba/68747470733a2f2f696d616765732e7765736572762e6e6c2f3f75726c3d68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f496e6e6f7661746976652d6373742f416e64726f69642d436f64652d456469746f722f6465762f6170702f7372632f6d61696e2f7265732f6472617761626c652f6c6f676f5f626c61636b2e706e673f763d3426683d32353026773d323530266669743d636f766572266d61736b3d636972636c65266d61786167653d3764" alt="" class="card_image" />
+        <div class="card_desc">
+          <center>
+            <h4 class="on-surface-text">Android Code Editor</h4>
+            <p class="on-surface-variant-text">A code editor with Ace and Sora editor support build for Android. Simple interface and implemented system shell terminal.</p>
+          </center>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
